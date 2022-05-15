@@ -1,0 +1,5 @@
+* [How To Break Into Data Engineering And Why It’s So Hard](https://medium.com/coriers/how-to-break-into-data-engineering-and-why-its-so-hard-afe023922ef6)
+* [5 things you should know for a career in data engineering](https://www.stitchdata.com/blog/5-things-you-should-know-for-career-in-data-engineering/)
+* [A Data Engineering Perspective on Go vs. Python (Part 1)](https://chollinger.com/blog/2020/06/a-data-engineering-perspective-on-go-vs.-python-part-1/)
+* [Python Data Science Handbook](https://www.amazon.co.uk/Python-Data-Science-Handbook-Essential-ebook/dp/B01N2JT3ST/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)
+* [The Battle for Data Engineer’s Favorite Programming Language Is Not Over Yet](https://betterprogramming.pub/the-battle-for-data-engineers-favorite-programming-language-is-not-over-yet-bb3cd07b14a0)
