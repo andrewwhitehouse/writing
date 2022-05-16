@@ -25,7 +25,9 @@ However, once you close the REPL your code is gone. (Although you can cycle thro
 
 And writing automated tests allow you to check quickly that your code is still working.
 
-I followed [this example](https://realpython.com/python-testing/) for 
+I followed [this example](https://realpython.com/python-testing/) for setting up the tests.
+
+Here are the initial folder contents: 
 
 ```
 .
@@ -96,15 +98,3 @@ $
 ```
 
 :tada:
-
-While I was writing this I was having a conversation with my daughter, who is interested in data science and psychology. Here are some useful ideas:
-
-- [OII M.Sc in Social Data Science](https://www.oii.ox.ac.uk/study/msc-in-social-data-science/), founded by [Dame Stephanie Shirley](https://www.steveshirley.com/) who was a [refugee](https://refugeeweek.org.uk/dame-stephanie-shirley-on-being-a-child-refugee/) in the second world war
-- [Interview](https://businessofsoftware.org/2020/12/ways-of-working-dame-stephanie-2019/) with Dame Stephanie Shirley 
-- [Why scientists are turning to Rust](https://www.nature.com/articles/d41586-020-03382-2)
-- [Rust for Data Science](https://dev.to/davidedelpapa/rust-for-data-science-tutorial-1-4g5j)   
-- Her university's computer science syllabus
-- [100 Days of Code in Python](https://www.udemy.com/course/100-days-of-code/)
-- [Six NLP techniques every data scientist should know](https://towardsdatascience.com/6-nlp-techniques-every-data-scientist-should-know-7cdea012e5c3)
-- [Sentiment Analysis — A how-to guide with movie reviews](https://towardsdatascience.com/sentiment-analysis-a-how-to-guide-with-movie-reviews-9ae335e6bcb2)
-- [UST Luna Collapse](https://www.youtube.com/watch?v=FqW4-FGA9j4)

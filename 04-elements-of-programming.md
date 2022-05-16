@@ -44,12 +44,20 @@ At boarding school there was a minicomputer which ran a version of Unix. The pro
 
 This book is useful because it gives you experience coding closer to the hardware. 
 
+As coders we operate some way up the stack, and we don’t usually need to think about the details of what the hardware is doing to make our programme run.
+
+We can write code that uses the fewest possible machine instructions to achieve the result, if performance is really critical. But that requires an investment in understanding how our chosen language maps to machine instructions. And that may not be the most valuable use of our developers’ time compared to shipping features for our customers who pay the bills.
+
+Our programme runs on a computer that has a finite amount of memory to store its working calculations. If we exceed that memory our programme will stop working properly. So something, or someone, needs to clean up the unused memory. Garbage collectors do this in many language runtimes. Or you can avoid the overhead of the cleanup and write code that is careful to allocate only what is needed, and clean it up.
+
+The instruction, or word size, affects the data types that are available to you as a coder.
+
+We used to have “32-bit” computers which referred to the instruction size. The maximum number that you can natively represent in the hardware was 2^32, which is 4,294,967,296. So 32 bit computers could not have more than 4GB (4 gigabytes … giga is 10^9). Now that we have 64-bit machines, the hardware can support much larger amounts of memory.
+
+(Note: calculate 2^64 in the next REPL session. And note that Python doesn’t limit integers to this size.)
+
+In the course of your coding you will create variables to represent the data concepts you are modelling. A statically typed language like Rust requires you to specify up-front what the type is, including how big you need it to be. A dynamically typed language infers the type, which means you as the coder don’t need to think about this too much.
+
 It's helpful to remembers that we have data abstractions built on top of the ones and zeroes recognised at the hardware level. Because sometimes those abstractions are "leaky" and we need to deal with that (example: how to represent floating point numbers).
 
-I'm thinking about coding examples in Python, Clojure and Rust. The code is front and centre, and the explanation is around the code.
-
-Links:
-
-* [The Sharp Edges of Leaky Abstraction](https://www.youtube.com/watch?v=2UJ5t2116lI)
-
-@Beaver
+To compare and contrast language styles we'll be covering examples in Python, Clojure and Rust.
