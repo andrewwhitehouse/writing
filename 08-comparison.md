@@ -75,4 +75,12 @@ even though the assigned value will happily fit in a 32-bit integer. (Intuitivel
 
 In the next section we're going to cover combining functions ...
 
-@Beaver 
+Exercise: 
+1. What is the maximum value of an unsigned 8-bit integer? 
+2. Why wouldn't we opt to represent age in years as a signed 8-bit integer?
+
+[details="Answers"]
+Answers:
+1. 255
+2. Ages can't be negative; 127
+[/details]
