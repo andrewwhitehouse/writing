@@ -51,7 +51,7 @@ sicp.chapter1=>
 
 The macros effectively applies a substitution on its arguments, and it is the result that is actually executed. So in this case the code no longer executes the `p` function, avoiding the infinite loop.
 
-The other way we can defer execution is by passing the second argument as a function to be executed from `test` only when needed:
+A second way we can defer execution is by passing the second argument as a function to be executed from `test` only when needed:
 
 ```
 sicp.chapter1=> (defn p [] (p))
