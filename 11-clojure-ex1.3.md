@@ -55,11 +55,10 @@ Clojure has a `max` function which we can use:
 ```
 ;; Third ...
 (defn two-largest [a b c]
-   (let [max-a-b (max a b)
-         min-a-b (min a b)]
+  (let [max-a-b (max a b)]
      (if (> c max-a-b)
        [c max-a-b]
-       [max-a-b (max min-a-b c)])))
+       [max-a-b (max (min a b) c)])))
 ```         
 
 But I keep thinking we can improve the readability further by sorting the elements in descending order:
@@ -168,5 +167,3 @@ I think it's a close call as to which of the solutions is preferable. Some may f
 When I'm being paid to deliver functionality for a client I tend to stop at "it's readable, not over-engineered, and it works". These exercises allow us to go further and explore the trade offs.
 
 @beaver
-
-    
