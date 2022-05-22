@@ -1,2 +1,8 @@
 def two_largest(*nums):
-  return [nums[0], nums[1]]
+  if nums[1] > nums[0]:
+    if nums[2] > nums[1]:
+      return [nums[2], nums[1]]
+    else:
+      return [nums[1], max(nums[2], nums[0])]
+  else:
+    return [nums[0], nums[1]]
