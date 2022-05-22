@@ -274,3 +274,11 @@ One more case:
 Note that the first number is actually larger than the second.
 
 @beaver
+
+P.S. Possible feedback points:
+
+1. how engaging is it?
+2. does the iterative development process come through clearly?
+3. is there enough detail or too much?
+4. would it benefit from simplification?
+5. what questions does it raise?
