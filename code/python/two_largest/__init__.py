@@ -1,2 +1,2 @@
 def two_largest(*nums):
-  return [0,0]
+  return [nums[0], nums[1]]
