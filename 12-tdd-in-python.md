@@ -273,6 +273,77 @@ One more case:
 
 Note that the first number is actually larger than the second.
 
+Here is our final set of tests:
+
+`test_two_largest.py `
+
+```
+import unittest
+from two_largest import *
+
+class TestTwoLargest(unittest.TestCase):
+
+    def test_first_two(self):
+        self.assertEqual([3,2], two_largest(3,2,1))
+
+    def test_first_two_out_of_order(self):
+        self.assertEqual([3,2], two_largest(2,3,1))
+
+    def test_last_two_largest_in_order(self):
+        self.assertEqual([6,5], two_largest(4,6,5))
+
+    def test_last_two_out_of_order(self):
+        self.assertEqual([9,8], two_largest(7,8,9))
+
+    def test_first_and_last_in_order(self):
+        self.assertEqual([102, 101], two_largest(102, 100, 101))
+
+    def test_first_and_last_out_of_order(self):
+        self.assertEqual([502, 501], two_largest(501, 500, 502))
+
+    def test_all_equal(self):
+        self.assertEqual([123, 123], two_largest(123, 123, 123))
+
+    def test_negative_numbers(self):
+        self.assertEqual([-10, -20], two_largest(-10, -20, -30))
+
+    def test_decimals(self):
+        self.assertEqual([2.001, 2.0003], two_largest(2.001, 2.0002, 2.0003))
+          
+if __name__ == '__main__':
+    unittest.main() 
+```    
+
+and the implementation:
+
+`two_largest/__init__.py`
+
+```
+def two_largest(*nums):
+  if nums[1] > nums[0]:
+    if nums[2] > nums[1]:
+      return [nums[2], nums[1]]
+    else:
+      return [nums[1], max(nums[2], nums[0])]
+  else:
+    if nums[0] > nums[2]:
+      return [nums[0], max(nums[2], nums[1])]
+    else:
+      return [nums[2], nums[0]]
+```      
+
+and passing tests
+
+```
+$ python -m unittest test_two_largest.py 
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK
+$ 
+```
+
 @beaver
 
 P.S. Possible feedback points:
