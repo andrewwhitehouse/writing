@@ -124,7 +124,9 @@ def two_largest(*nums):
     return [nums[0], nums[1]]
 ```
 
-The nested 'ifs' are starting th become more difficult to reason about so it makes sense to use the max function to figure out the correct ordering.
+The nested 'ifs' are starting to become more difficult to reason about so it makes sense to use the max function to figure out the correct ordering.
+
+I started to use the max function in both elements of the returned value. But on running the test I realised this wouldn't work. We're returning a two-element array and the first element is the maximum of nums[1] and nums[2]. If nums[2] is larger, then the second element should be nums[1]; if nums[1] is greater then the second element is the larger of nums[2] and nums[0]. As it's written, the code doesn't reflect that dependency between the elements.
 
 New failing test ...
 
@@ -132,6 +134,8 @@ New failing test ...
     def test_last_two_out_of_order(self):
         self.assertEqual([9,8], two_largest(7,8,9))
 ```
+
+Make the change ...
 
 ```
 def two_largest(*nums):
@@ -268,3 +272,5 @@ One more case:
 ```
 
 Note that the first number is actually larger than the second.
+
+@beaver
