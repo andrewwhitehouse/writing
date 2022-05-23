@@ -64,8 +64,17 @@
          (->> (sort > nums)
               ((fn [[a b]] [a b]))))
 
-(defn two-largest [a b c]
+(comment defn two-largest [a b c]
   (let [max-a-b (max a b)]
      (if (> c max-a-b)
        [c max-a-b]
        [max-a-b (max (min a b) c)])))
+
+(defn two-largest [a b c]
+  (cond 
+    (>= a b c) [a b]
+    (>= b a c) [b a]
+    (>= c b a) [c b]
+    (>= a c b) [a c]
+    (>= b c a) [b c]
+    (>= c a b) [c a]))
