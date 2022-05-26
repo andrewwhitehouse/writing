@@ -146,7 +146,7 @@ java.lang.Double 3.5
   (< (Math/abs (- (square guess) x)) 0.001))
 ```
 
-[_Note that LISP functions allow the use of question marks, which are useful when defining functions that provide some sort of conditionla logic, known as a "predicate"_]
+[_Note that LISP functions allow the use of question marks, which are useful when defining functions that provide some sort of conditional logic, known as a "predicate"_]
 
 How can we call this function? We want to know if the guess is good enough as an approximation for the square root of x.
 
@@ -174,14 +174,9 @@ I've commented out some of the unused code to reduce the noise in the output. Yo
 
 Call your function with different parameters to make it return both true and false.
 
+Here's how my REPL looks at the end of this session.
 
-
-
-
-
-
-
-
+![REPL view](./images/15-repl.png)
 
 
 TODO:
