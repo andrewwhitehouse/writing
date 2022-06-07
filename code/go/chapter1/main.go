@@ -2,11 +2,12 @@ package main
 
 import "fmt"
 
-func identity(x int32) int32 {
-	return x
+func Sum(x int, y int) int {
+    return x + y
 }
 
 func main() {
-	var age int64 = 22
-	fmt.Println(identity(age))
+    var x int = 5
+    var y int = 10
+    fmt.Printf("Sum of %d and %d is %d\n", x, y, Sum(x, y))
 }
