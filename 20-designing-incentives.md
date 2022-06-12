@@ -28,4 +28,6 @@ Reading List:
 technology for sustainable transport interventions](https://arxiv.org/pdf/2104.01852.pdf)
 * [Tokenizing Behavior Change: A Pathway for the Sustainable Development Goals](https://www.frontiersin.org/articles/10.3389/fbloc.2021.730101/full)
 * [Blockchain Adoption and Digital Privacy](https://medium.com/mit-cryptoeconomics-lab/blockchain-adoption-and-digital-privacy-b94210122021)
+* [The Cold Start Problem: How to Start and Scale Network Effects
+](https://a16z.com/book/the-cold-start-problem/)
 
