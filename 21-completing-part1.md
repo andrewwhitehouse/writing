@@ -169,6 +169,21 @@ Day 1 Part 1 <result>
 $ 
 ```
 
+**Exercises**
+
+1. Change the input data, temporarily, by adding a line containing a non-numeric value. What happens? 
+2. What happens if you make one of the values a non-integer value, like `123.456`? 
+3. Change the name of the file loaded in `solveDay1()` and see what happens when you run the programme.
+4. What does the call to `strings.TrimSpace(content)` do in `Parse()`? What happens if you replace that with `content` and add some blank lines to the end of `day1.txt`?
+
+[details="Answer"]
+
+1. You should see an error complaining about the value you have added
+2. Another error reporting on the bad value
+3. A different error indicating that the programme cannot find the file
+4. It removes leading and trailing spaces (see the [Go docs](https://pkg.go.dev/strings#TrimSpace).
+[/details]
+
 Observations:
 
 - Go returns success and error results explicitly from functions; you should generally check for errors especially if your input data is going to vary
