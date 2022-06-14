@@ -1,6 +1,9 @@
 package day1
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
 
 func TestCountIncreases(t *testing.T) {
 	depths := []uint16{199, 200, 208, 210, 200, 207, 240, 269, 260, 263}
@@ -16,5 +19,14 @@ func TestIntegration(t *testing.T) {
 	expected := uint16(7)
 	if expected != actual {
 		t.Errorf("Part1 was incorrect, got: %d, want: %d.", actual, expected)
+	}
+}
+
+func TestSlidingWindow(t *testing.T) {
+	depths := []uint16{199, 200, 208, 210, 200, 207, 240, 269, 260, 263}
+	expected := []uint16{607, 618, 618, 617, 647, 716, 769, 792}
+	actual := SlidingWindow(depths)
+	if !reflect.DeepEqual(actual, expected) {
+		t.Errorf("SlidingWindow was incorrect, got: %d, want: %d.", actual, expected)
 	}
 }

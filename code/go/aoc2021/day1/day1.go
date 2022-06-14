@@ -10,6 +10,14 @@ func CountIncreases(depths []uint16) uint16 {
 	return increases
 }
 
+func SlidingWindow(depths []uint16) []uint16 {
+	ret := make([]uint16, len(depths)-2)
+	for i := 2; i < len(depths); i++ {
+		ret[i-2] = depths[i] + depths[i-1] + depths[i-2]
+	}
+	return ret
+}
+
 func Part1(content string) (uint16, error) {
 	values, err := Parse(content)
 	if err != nil {
