@@ -18,6 +18,10 @@ func SlidingWindow(depths []uint16) []uint16 {
 	return ret
 }
 
+func Part2(content string) (uint16, error) {
+	return 0, nil
+}
+
 func Part1(content string) (uint16, error) {
 	values, err := Parse(content)
 	if err != nil {
