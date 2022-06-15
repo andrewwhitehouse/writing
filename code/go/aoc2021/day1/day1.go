@@ -19,7 +19,11 @@ func SlidingWindow(depths []uint16) []uint16 {
 }
 
 func Part2(content string) (uint16, error) {
-	return 0, nil
+	values, err := Parse(content)
+	if err != nil {
+		return 0, err
+	}
+	return CountIncreases(SlidingWindow(values)), nil
 }
 
 func Part1(content string) (uint16, error) {

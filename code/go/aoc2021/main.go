@@ -25,7 +25,13 @@ func solveDay1() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+	part2Result, err := day1.Part2(content)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 	fmt.Printf("Day 1 Part 1 %d\n", part1Result)
+	fmt.Printf("Day 1 Part 2 %d\n", part2Result)
 }
 
 func main() {
