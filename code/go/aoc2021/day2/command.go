@@ -8,12 +8,12 @@ const (
 	Down              = 2
 )
 
-type command struct {
+type Command struct {
 	direction Direction
 	distance  uint16
 }
 
-func newCommand(direction Direction, distance uint16) *command {
-	c := command{direction: direction, distance: distance}
+func newCommand(direction Direction, distance uint16) *Command {
+	c := Command{direction: direction, distance: distance}
 	return &c
 }
