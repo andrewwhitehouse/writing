@@ -7,8 +7,11 @@ import (
 
 func TestParseInput(t *testing.T) {
 	input := "forward 5\ndown 5\nforward 8\nup 3\ndown 8"
-	actual := Parse(input)
-	expected := []*Command{
+	actual, err := Parse(input)
+	if err != nil {
+		t.Fatal(err)
+	}
+	expected := []Command{
 		newCommand(Forward, 5),
 		newCommand(Down, 5),
 		newCommand(Forward, 8),

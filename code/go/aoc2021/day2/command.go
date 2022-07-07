@@ -3,9 +3,10 @@ package day2
 type Direction uint16
 
 const (
-	Forward Direction = 0
-	Up      Direction = 1
-	Down              = 2
+	None    Direction = 0
+	Forward Direction = 1
+	Up      Direction = 2
+	Down    Direction = 3
 )
 
 type Command struct {
@@ -13,7 +14,6 @@ type Command struct {
 	distance  uint16
 }
 
-func newCommand(direction Direction, distance uint16) *Command {
-	c := Command{direction: direction, distance: distance}
-	return &c
+func newCommand(direction Direction, distance uint16) Command {
+	return Command{direction: direction, distance: distance}
 }

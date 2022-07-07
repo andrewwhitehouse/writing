@@ -2,6 +2,7 @@ package main
 
 import (
 	"aoc2021/day1"
+	"aoc2021/day2"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -34,6 +35,13 @@ func solveDay1() {
 	fmt.Printf("Day 1 Part 2 %d\n", part2Result)
 }
 
+func solveDay2() {
+	content := loadContent("input/day2.txt")
+	part1Result, _ := day2.Part1(content)
+	fmt.Printf("Day 2 Part 1 %d\n", part1Result)
+}
+
 func main() {
 	solveDay1()
+	solveDay2()
 }
